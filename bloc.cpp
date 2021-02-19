@@ -6,7 +6,7 @@ using namespace std;
 
 void Bloc::listare_ap(bool cu_numar){
         if (cu_numar){
-            cout << "Apartament: " << numar << endl;
+            cout << "Bloc: " << numar << endl;
         }
         for (int i = 0; i < locuinte.size(); ++i){
             cout << i+1 << " ";
@@ -32,14 +32,11 @@ void Bloc::editare(){
             locuinte.push_back(ap);
         }
             break;
-        case 2:{
-            Apartament ap;
-            ap.listare(true);
+        case 2:
+            listare_ap(true);
             break;
-        }
         case 3:{
-            Apartament ap;
-            ap.listare(true);
+            listare_ap(true);
             cout << "A cata pozitie se sterge?(0 este iesire)\n";
             int poz;
             cin >> poz;
@@ -50,8 +47,7 @@ void Bloc::editare(){
         }
             break;
         case 4:{
-            Apartament ap;
-            ap.listare(true);
+            listare_ap(true);
             cout << "A cata pozitie se editeaza?(0 este iesire)\n";
             int poz;
             cin >> poz;

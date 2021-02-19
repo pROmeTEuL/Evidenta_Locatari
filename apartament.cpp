@@ -3,7 +3,7 @@
 #include <iostream>
 void Apartament::listare(bool cu_numar){
     if (cu_numar){
-        cout << "Apartament(e): " << numar << endl;
+        cout << "Apartamentul: " << numar << endl;
     }
     for (int i = 0; i < locatari.size(); ++i){
         cout << i+1 << " ";
